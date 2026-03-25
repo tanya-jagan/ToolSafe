@@ -9,12 +9,9 @@ import os
 import argparse
 import shutil
 from openai import OpenAI
-from task_executor.agent_safetybench import *
 from task_executor.agentharm import *
 from task_executor.asb import *
 from task_executor.agentdojo_exec import *
-from task_executor.bfcl import *
-
 
 from model.model import *
 from agent.agent_prompts import *
@@ -30,7 +27,6 @@ from agent.sec_planexecute_agent import *
 from eval.llm_judge import *
 from eval.rubrics_judge import *
 from eval.rule_judge import *
-from eval.bfcl_judge import *
 
 def load_config(config_path):
     with open(config_path, "r", encoding="utf-8") as f:
